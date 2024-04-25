@@ -53,7 +53,7 @@ sistema_controle = ctrl.ControlSystem([regra1, regra2, regra3])
 # Roda a teste de avaliação
 teste = ctrl.ControlSystemSimulation(sistema_controle)
 
-# Função para Desfuzificar os conjuntos de FuzzyFunction to defuzzify the fuzzy sets
+# Função para Desfuzificar os conjuntos de Fuzzy
 def desfuzificar(idade, sexo, pressao_alta, colesterol_alto, diabetes, dor_no_peito, falta_de_ar, tontura):
     teste.input['idade'] = idade
     teste.input['sexo'] = sexo
